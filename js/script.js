@@ -38,10 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       const desc = document.querySelector('.desc');
       const lottie = $.querySelector(".lottie");
+      const aboutUs = $.querySelector(".about-us");
+      const skills = $.querySelector(".skills")
       desc.style.opacity = '1';
       lottie.style.opacity = '1'
+      aboutUs.style.opacity = '1'
+      skills.style.opacity = '1'
       desc.style.transform = 'translateY(0)';
       lottie.style.transform = 'translateY(0)'
+      aboutUs.style.transform = 'translateX(0)'
+      skills.style.transform = 'translateX(0)'
     }, 500);
   });
   

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style/custom.css">
     <title>Personal Portfolio</title>
 </head>
-<body class="text-blue-600 overflow-x-hidden">
+<body class="text-blue-600 bg-slate-100">
     <!-- Header -->
-    <header>
+    <header class="fixed top-0 right-0  left-0 z-50">
         <nav class="bg-slate-100 p-5">
             <div class="container mx-auto flex justify-between items-center">
                 <div class="text-2xl">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="hidden md:flex space-x-12 links">
                     <a href="#" class="nav-link hover:text-white hover:bg-blue-400 px-4 py-1 rounded-full transition-all duration-500 active">Home</a>
-                    <a href="#" class="nav-link hover:text-white hover:bg-blue-400 px-4 py-1 rounded-full transition-all duration-500">About</a>
+                    <a href="#about" class="nav-link hover:text-white hover:bg-blue-400 px-4 py-1 rounded-full transition-all duration-500">About</a>
                     <a href="#" class="nav-link hover:text-white hover:bg-blue-400 px-4 py-1 rounded-full transition-all duration-500">Services</a>
                     <a href="#" class="nav-link hover:text-white hover:bg-blue-400 px-4 py-1 rounded-full transition-all duration-500">Contact</a>
                 </div>
@@ -29,7 +29,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>                  
                 </button>
-                <ul id="mobile-links" class="hidden bg-slate-100 h-screen w-8/12 absolute right-0 top-0 flex-col items-center text-center space-y-8 py-10 opacity-90 z-50">
+                <ul id="mobile-links" class="hidden fixed bg-slate-100 h-full w-8/12  right-0 top-0 flex-col items-center text-center space-y-8 py-10 opacity-90 z-50">
                     <svg id="close-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>                      
@@ -44,7 +44,7 @@
     </header>
     <!-- End of Header -->
     <!-- Main -->
-    <main class=" justify-start bg-slate-100 flex md:flex-row flex-col-reverse items-center py-20 mx-auto md:justify-around">
+    <main class="justify-start bg-slate-100 flex md:flex-row flex-col-reverse items-center py-20 mx-auto md:justify-around">
         <div class="text-center md:space-y-14 space-y-7 md:ml-48 desc">
         <h2 class="md:text-6xl text-4xl name text-blue-600">Amir jt</h2>
         <p class="md:text-4xl  text-2xl job text-blue-600">Front End Dev</p>
@@ -52,6 +52,103 @@
        <img src="/images/Animation - 1697902951512.gif" class="md:w-1/4 lottie" alt="">
     </main>
      <!--End of Main -->
+     <!-- About -->
+     <h2 class="text-3xl text-center mt-5 underline" id="about">About</h2>
+     <div class="about-us flex flex-col md:flex-row items-center justify-center mx-auto space-x-12 mt-10 border border-slate-200 shadow-sm p-5 rounded-full w-screen">
+        <img src="/images/main logo.png" alt="" class="rounded-full" width="150">
+        <div class="flex flex-col md:text-left md:w-5/12 p-5 space-y-10">
+            <h2 class=" font-bold text-xl md:text-3xl ">i am Amir jt</h2>
+            <p class=" text-blue-500" >Web Designer</p>
+            <p class=" text-blue-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+            <div class="flex space-x-6">
+                <i class="fa-brands fa-instagram fa-bounce fa-xl cursor-pointer hover:text-blue-400 transition-all"></i>
+                <i class="fa-brands fa-linkedin-in fa-bounce fa-xl cursor-pointer hover:text-blue-400 transition-all"></i>
+                <i class="fa-brands fa-telegram fa-bounce fa-xl cursor-pointer hover:text-blue-400 transition-all"></i>
+            </div>
+        </div>
+     </div>
+     <!-- End of About -->
+      <!-- Skills -->
+      <h2 class="text-3xl text-center mt-5 underline" id="about">Skills</h2>
+      <div class="flex flex-col justify-center items-center space-y-12 mt-8 skills p-5">
+        <div class="dev flex space-x-8 border-b-2 border-blue-400">
+            <p class="bg-blue-200 p-2 rounded-t-xl hover:bg-blue-300 transition-all duration-500 cursor-pointer">Html</p>
+            <p class="bg-blue-200 p-2 rounded-t-xl hover:bg-blue-300 transition-all duration-500 cursor-pointer">Css</p>
+            <p class="bg-blue-200 p-2 rounded-t-xl hover:bg-blue-300 transition-all duration-500 cursor-pointer">Tailwind</p>
+            <p class="bg-blue-200 p-2 rounded-t-xl hover:bg-blue-300 transition-all duration-500 cursor-pointer">Java script</p>
+        </div>
+        <div class="design flex space-x-8 border-t-2 border-blue-400">
+            <p class="bg-blue-200 p-2 rounded-b-xl  hover:bg-blue-300 transition-all duration-500 cursor-pointer">Adobe XD</p>
+            <p class="bg-blue-200 p-2 rounded-b-xl  hover:bg-blue-300 transition-all duration-500 cursor-pointer">Adobe Photoshop</p>
+        </div>
+      </div>
+      <!-- End of Skills -->
+      <!-- Portofolio -->
+      <h2 class="text-3xl text-center mt-8 underline" id="about">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 w-11/12 md:w-1/2 mx-auto">
+        <img src="https://picsum.photos/600/300" class="rounded-xl hover:-translate-y-2 transition-all" alt="">
+        <img src="https://picsum.photos/600/300" class="rounded-xl hover:-translate-y-2 transition-all" alt="">
+        <img src="https://picsum.photos/600/300" class="rounded-xl hover:-translate-y-2 transition-all" alt="">
+        <img src="https://picsum.photos/600/300" class="rounded-xl hover:-translate-y-2 transition-all" alt="">
+        <img src="https://picsum.photos/600/300" class="rounded-xl hover:-translate-y-2 transition-all" alt="">
+        <img src="https://picsum.photos/600/300" class="rounded-xl hover:-translate-y-2 transition-all" alt="">
+      </div>
+      <!-- End of Portofolio -->
+      <!-- Contact -->
+      <h2 class="text-3xl text-center mt-8 underline" id="about">Contact</h2>
+     <div class="mt-8 p-2 md:flex md:flex-row-reverse md:justify-around">
+        <div class="form flex flex-col space-y-2">
+            <form action="#" class="flex space-x-2">
+                <input type="text" name="" id="" placeholder="Name" class="w-1/2 bg-transparent border border-blue-400 rounded-xl p-2 focus:outline-none">
+                <input type="text" name="" id="" placeholder="Number" class="w-1/2 bg-transparent border border-blue-400 rounded-xl p-2 focus:outline-none">
+            </form>
+            <textarea name="" id="" cols="47" rows="4" placeholder="Message" class="bg-transparent border border-blue-400 rounded-xl p-2 focus:outline-none"></textarea>
+          </div>
+          <div class="flex flex-col space-y-5 justify-center  text-center mt-5">
+            <div class="">
+                <div class="font-bold">Email</div>
+                <div class="text-slate-500">info.mail.com</div>
+            </div>
+            <div class="">
+                <div class="font-bold">Phone</div>
+                <div class="text-slate-500">+20 999-999</div>
+            </div>
+            <div class="">
+                <div class="font-bold">Adress</div>
+                <div class="text-slate-500">USA</div>
+            </div>
+          </div>
+     </div>
+      <!-- End of Contact -->
+      <!-- Footer -->
+      <div class="foorter flex bg-slate-800 mt-8 justify-around p-8">
+        <div>
+            <h2 class="text-xl text-white mb-4">Amir jt</h2>
+            <p class="text-slate-400">I'm Amir jt and this is my personal website</p>
+        </div>
+        <div class="flex flex-col space-y-6">
+            <h2>EXPLORE</h2>
+            <ul>
+                <li class="text-slate-400">Home</li>
+                <li class="text-slate-400">About</li>
+                <li class="text-slate-400">Skills</li>
+                <li class="text-slate-400">Portfolio</li>
+                <li class="text-slate-400">Contact</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-8">Follow</h2>
+            <div class="flex flex-row space-x-5">
+                <i class="fa-brands fa-instagram fa-xl text-red-600"></i>
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                <i class="fa-brands fa-telegram fa-xl"></i>
+            </div>
+        </div>
+      </div>
+      <!-- End of Footer -->
+     <!-- main js file -->
     <script src="/js/script.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ab7fbf4aef.js" crossorigin="anonymous"></script>
 </body>
 </html>
