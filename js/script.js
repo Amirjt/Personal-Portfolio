@@ -12,6 +12,17 @@ links.forEach((link) => {
   });
 });
 
+// fixing header on the top when scrolling
+const navigation = $.querySelector("nav")  
+
+window.addEventListener("scroll" , function(){
+   if(window.scrollY > 50){
+     navigation.classList.add("fixedd")
+   }else if (window.scrollY < 50){
+    navigation.classList.remove("fixedd")
+   }
+})
+
 // Responsive Btn 
 const btn = $.querySelector("#res-btn");
 const mobileLinks = $.querySelector("#mobile-links");

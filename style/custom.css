@@ -1,11 +1,22 @@
-/* active class for header links */
-body {
-  overflow-x: hidden !important ;
-  box-sizing: border-box !important;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
+/* active class for header links */
+
 .active {
     background-color: #60A5FA ;
     color: white;
+}
+/* fixed class for header */
+.fixedd {
+  position: fixed;
+  background-color: #1E293B !important;
+  height: 70px;
+  width: 100%;
+  transition: all .7s;
+  z-index: 1;
+  
 }
 
 /* animation for mobile menu */
@@ -52,7 +63,7 @@ body {
     transition: opacity .5s ease, transform 1.5s ease;
 }
 
-
+/* about us animation */
 .about-us {
   opacity: 0;
   transform: translateX(-100px);
@@ -64,3 +75,4 @@ body {
   transform: translateX(-200px);
   transition: opacity .5s ease, transform 1.5s ease;
 }
+
