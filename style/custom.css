@@ -14,9 +14,8 @@ html, body {
   background-color: #1E293B !important;
   height: 70px;
   width: 100%;
-  transition: all .7s;
-  z-index: 1;
-  
+  transition: all .3s;
+  z-index: 1; 
 }
 
 /* animation for mobile menu */
